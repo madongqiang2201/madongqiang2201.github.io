@@ -7,6 +7,7 @@
       <title><![CDATA[Mac搭建Hexo博客及NexT主题配置优化]]></title>
       <url>https://madongqiang2201.github.io/2016/07/14/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近看到<a href="https://www.aswifter.com/" target="_blank" rel="external">阳春面</a>的博客，感觉非常漂亮，正好最近也想自己搭个博客，记录一下自己的学习经历和生活感悟，给自己留下点回忆，同时整理一下自己的思路，于是就想仿照着弄一个类似的静态博客网站，正好最近有时间，而且内心搭博客的念头越来越汹涌，所以，说干就干！</p>
+<a id="more"></a>
 <h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><p>拉到阳春面博客的最下方，发现他的静态博客是Hexo驱动，使用的NexT.Mist主题，而且我非常喜欢这个主题，所以我完全就是冲着阳春面的博客效果去的，所以这片文章主要介绍：</p>
 <p><strong>1. 基于Hexo和github pages搭建静态博客</strong></p>
 <p><strong>2. Next主题配置及优化</strong></p>
