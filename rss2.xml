@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小马哥Mark的博客</title>
-  
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="https://madongqiang2201.github.io/"/>
-  <updated>2016-07-20T08:52:12.000Z</updated>
-  <id>https://madongqiang2201.github.io/</id>
-  
-  <author>
-    <name>小马哥Mark</name>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>小马哥Mark的博客</title>
+    <link>https://madongqiang2201.github.io/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Mac搭建Hexo博客及NexT主题配置优化</title>
-    <link href="https://madongqiang2201.github.io/2016/07/14/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://madongqiang2201.github.io/2016/07/14/Mac下Hexo＋github-pages搭建静态博客/</id>
-    <published>2016-07-14T02:59:31.000Z</published>
-    <updated>2016-07-20T08:52:12.000Z</updated>
+    <description>我喜欢别人叫我小马哥！</description>
+    <pubDate>Wed, 20 Jul 2016 08:52:12 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
     
-    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近看到&lt;a href=&quot;https://www.aswifter.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阳春面&lt;/a&gt;的博客，感觉非常漂亮，正好最近也想自己搭个博客，记录一下自己的学习经历和生活感悟，给自己留下点回忆，同时整理一下自己的思路，于是就想仿照着弄一个类似的静态博客网站，正好最近有时间，而且内心搭博客的念头越来越汹涌，所以，说干就干！&lt;/p&gt;
+    <item>
+      <title>Mac搭建Hexo博客及NexT主题配置优化</title>
+      <link>https://madongqiang2201.github.io/2016/07/14/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link>
+      <guid>https://madongqiang2201.github.io/2016/07/14/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</guid>
+      <pubDate>Thu, 14 Jul 2016 02:59:31 GMT</pubDate>
+      <description>
+      
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近看到&lt;a href=&quot;https://www.aswifter.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;
+      
+      </description>
+      
+      <content:encoded>&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近看到&lt;a href=&quot;https://www.aswifter.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;阳春面&lt;/a&gt;的博客，感觉非常漂亮，正好最近也想自己搭个博客，记录一下自己的学习经历和生活感悟，给自己留下点回忆，同时整理一下自己的思路，于是就想仿照着弄一个类似的静态博客网站，正好最近有时间，而且内心搭博客的念头越来越汹涌，所以，说干就干！&lt;/p&gt;
 &lt;h2 id=&quot;主要内容&quot;&gt;&lt;a href=&quot;#主要内容&quot; class=&quot;headerlink&quot; title=&quot;主要内容&quot;&gt;&lt;/a&gt;主要内容&lt;/h2&gt;&lt;p&gt;拉到阳春面博客的最下方，发现他的静态博客是Hexo驱动，使用的NexT.Mist主题，而且我非常喜欢这个主题，所以我完全就是冲着阳春面的博客效果去的，所以这片文章主要介绍：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. 基于Hexo和github pages搭建静态博客&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2. Next主题配置及优化&lt;/strong&gt;&lt;/p&gt;
@@ -106,29 +106,23 @@
 &lt;p&gt;&lt;a href=&quot;https://madongqiang2201.github.io/&quot;&gt;我的个人博客&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/users/a5a6afe1c044/timeline&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的简书&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/u011172283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的CSDN&lt;/a&gt;&lt;/p&gt;
-</content>
+</content:encoded>
+      
+      <comments>https://madongqiang2201.github.io/2016/07/14/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;最近看到&lt;a href=&quot;https://www.aswifter.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://madongqiang2201.github.io/categories/hexo/"/>
-    
-    
-      <category term="hexo" scheme="https://madongqiang2201.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://madongqiang2201.github.io/2016/07/10/hello-world/"/>
-    <id>https://madongqiang2201.github.io/2016/07/10/hello-world/</id>
-    <published>2016-07-10T08:56:19.000Z</published>
-    <updated>2016-07-11T03:06:10.000Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    <item>
+      <title>Hello World</title>
+      <link>https://madongqiang2201.github.io/2016/07/10/hello-world/</link>
+      <guid>https://madongqiang2201.github.io/2016/07/10/hello-world/</guid>
+      <pubDate>Sun, 10 Jul 2016 08:56:19 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+      </description>
+      
+      <content:encoded>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo server&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -137,19 +131,10 @@
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo deploy&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
+</content:encoded>
+      
+      <comments>https://madongqiang2201.github.io/2016/07/10/hello-world/#disqus_thread</comments>
+    </item>
     
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-    
-    </summary>
-    
-      <category term="test" scheme="https://madongqiang2201.github.io/categories/test/"/>
-    
-    
-      <category term="test" scheme="https://madongqiang2201.github.io/tags/test/"/>
-    
-  </entry>
-  
-</feed>
+  </channel>
+</rss>
