@@ -24,7 +24,7 @@
 </ol>
 <p>这些东西都不熟悉没关系，下面都会详细介绍。</p>
 <h2 id="注册Github账号并创建repo"><a href="#注册Github账号并创建repo" class="headerlink" title="注册Github账号并创建repo"></a>注册Github账号并创建repo</h2><p>因为我们的博客是基于github pages的，也就是博客内容都托管在github pages，所以需要有一个github账号，并且创建一个公开库（repo），用来存放你的博客。Github账号大家应该都有了，俗话说，没有Github 账号的程序员，不是好段子手，身为程序员，不加入这个全球最大的技术（搞基）社区怎么说的过去呢。如果还没有github账号，去<a href="https://github.com/join?source=header-home" target="_blank" rel="external">这里</a>申请一个就好了，申请步骤很简单，不再详述，记住选免费服务就可以。在github上创建public库是免费的，也就是传说中的创建开源库。创建private库是要付费的，我们使用github主要就是为了拥抱开源，如果没有特殊需求，创建public库就可以，我们一会儿要创建的博客仓库就是public库。</p>
-<p>申请完账号，登陆之后，就可以创建repo了，点击<code>New repository</code>，会跳转到这个界面:<br><img src="/Users/madongqiang/Downloads/blog_images/new_repo.png" alt=""></p>
+<p>申请完账号，登陆之后，就可以创建repo了，点击<code>New repository</code>，会跳转到这个界面:<br><img src="http://oam0f3ifh.bkt.clouddn.com/new_repo.png-blog" alt=""></p>
 <p>需要注意的地方，我都在图上做了标注，这些标注里最需要注意的就是新创建的库的名字，必须是<code>username.github.io</code>，等你创建库的时候，把<code>username</code>换成你的用户名就可以，例如我的用户名是madongqiang2201，那库名就是<code>madongqiang2201.github.io</code>。信息填写完毕，点击<code>create repository</code>就可以把库创建出来。</p>
 <p>要想进一步深入了解github，可以阅读这些资料：</p>
 <p><a href="https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md" target="_blank" rel="external">Github秘籍</a></p>
@@ -52,7 +52,7 @@
 <h3 id="创建一个SSH-key"><a href="#创建一个SSH-key" class="headerlink" title="创建一个SSH key"></a>创建一个SSH key</h3><p>在终端输入以下命令：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></div></pre></td></tr></table></figure>
 <p>回车，接着会提示你，让你输入文件名，直接回车会创建使用默认文件名的文件（推荐使用默认文件名）；然后会提示你输入两次密码（输入密码之后没有反馈，显示还是空白，但是你确实已经输入了），当然密码也可以不输，直接回车，如果这里没有输入密码，以后提交博客更新的时候就不需要输入密码了。</p>
-<h3 id="添加SSH-key到github"><a href="#添加SSH-key到github" class="headerlink" title="添加SSH key到github"></a>添加SSH key到github</h3><p>经过第二步，如果你没有指定文件名（也就是使用的默认文件名），那么你的.ssh文件夹下，应该有一个id_rsa.pub文件了，打开该文件，复制里面的文本。然后登陆github，点击右上角头像右边的三角图标，点击Settings，然后在左边菜单栏点击SSH and GPG keys，点击new ssh key，title 随便填一个，在key 栏填入你复制的内容，点击add ssh key，就可以添加一个ssh key了，如下图：<br><img src="/Users/madongqiang/Downloads/blog_images/ssh_key.png" alt=""></p>
+<h3 id="添加SSH-key到github"><a href="#添加SSH-key到github" class="headerlink" title="添加SSH key到github"></a>添加SSH key到github</h3><p>经过第二步，如果你没有指定文件名（也就是使用的默认文件名），那么你的.ssh文件夹下，应该有一个id_rsa.pub文件了，打开该文件，复制里面的文本。然后登陆github，点击右上角头像右边的三角图标，点击Settings，然后在左边菜单栏点击SSH and GPG keys，点击new ssh key，title 随便填一个，在key 栏填入你复制的内容，点击add ssh key，就可以添加一个ssh key了，如下图：<br><img src="http://oam0f3ifh.bkt.clouddn.com/ssh_key.png-blog" alt=""></p>
 <h3 id="验证SSH-key是否配置成功"><a href="#验证SSH-key是否配置成功" class="headerlink" title="验证SSH key是否配置成功"></a>验证SSH key是否配置成功</h3><p>在终端输入以下命令：</p>
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh -T git@github.com</div></pre></td></tr></table></figure>
 <p>如果你创建的key没有设密码的话，直接一顿回车，到最后提示你<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi yourusername! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></div></pre></td></tr></table></figure></p>
@@ -69,7 +69,7 @@
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
 <p>安装完成之后，打开本地博客目录的<code>_config.yml</code>文件，编辑其中的deploy节点：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:yourusername/youusername.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p>将上面<code>yourusername</code>替换成你的github用户名即可，你也可以去你开始的时候创建的名为<code>yourusername.github.io</code>的仓库去直接复制完整的地址，如下图：<br><img src="/Users/madongqiang/Downloads/blog_images/clone_address.png" alt=""><br>当前复制出来的值，就是通过SSH方式clone的地址，配置完成后，以后提交博客更新不用输用户名和密码（如果你ssh key没有设置密码的话）；点击上图右上角<code>Use HTTPS</code>，复制出来的clone地址也可以配置到repo，但是这样，提交更新的时候，就需要输入用户名和密码了。</p>
+<p>将上面<code>yourusername</code>替换成你的github用户名即可，你也可以去你开始的时候创建的名为<code>yourusername.github.io</code>的仓库去直接复制完整的地址，如下图：<br><img src="http://oam0f3ifh.bkt.clouddn.com/clone_address.png-blog" alt=""><br>当前复制出来的值，就是通过SSH方式clone的地址，配置完成后，以后提交博客更新不用输用户名和密码（如果你ssh key没有设置密码的话）；点击上图右上角<code>Use HTTPS</code>，复制出来的clone地址也可以配置到repo，但是这样，提交更新的时候，就需要输入用户名和密码了。</p>
 <p>保存配置之后，在本地博客目录执行以下命令：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean  // clean本地项目，防止缓存</div><div class="line">hexo g      // 根据你编辑的md格式的博客，生成静态网页</div><div class="line">hexo d      // 将本地博客发布到github</div></pre></td></tr></table></figure>
 <p>然后，在浏览器地址栏输入<code>yourusername.github.io</code>就可以访问你的博客了，别人也可以通过这个地址访问你的博客。</p>
@@ -90,21 +90,6 @@
 <p><a href="https://madongqiang2201.github.io/">我的个人博客</a></p>
 <p><a href="http://www.jianshu.com/users/a5a6afe1c044/timeline" target="_blank" rel="external">我的简书</a></p>
 <p><a href="http://blog.csdn.net/u011172283" target="_blank" rel="external">我的CSDN</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>https://madongqiang2201.github.io/2016/07/10/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
     </entry>
     
