@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://madongqiang2201.github.io/"/>
-  <updated>2016-07-21T07:54:04.000Z</updated>
+  <updated>2016-07-21T07:57:57.000Z</updated>
   <id>https://madongqiang2201.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     <id>https://madongqiang2201.github.io/2016/07/21/Mac下Hexo＋github-pages搭建静态博客/</id>
     <published>2016-07-21T02:59:31.000Z</published>
-    <updated>2016-07-21T07:54:04.000Z</updated>
+    <updated>2016-07-21T07:57:57.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近看到<a href="https://www.aswifter.com/" target="_blank" rel="external">阳春面</a>的博客，感觉非常漂亮，正好最近也想自己搭个博客，记录一下自己的学习经历和生活感悟，给自己留下点回忆，同时整理一下自己的思路，于是就想仿照着弄一个类似的静态博客网站，正好最近有时间，而且内心搭博客的念头越来越汹涌，所以，说干就干！</p>
 <h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><p>拉到阳春面博客的最下方，发现他的静态博客是Hexo驱动，使用的NexT.Mist主题，而且我非常喜欢这个主题，所以我完全就是冲着阳春面的博客效果去的，所以这片文章主要介绍：</p>
@@ -104,7 +104,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: blog title</div><div class="line">date: 2016-07-20 10:59:31</div><div class="line">tag: hexo        // 指定本篇文章tag标签</div><div class="line">category: hexo   //  指定本片文章分类</div><div class="line">---</div></pre></td></tr></table></figure>
 <p><strong>4.手动实现某条博文置顶</strong><br>Next主题没有博文置顶相关设置（或许这个功能Hexo应该提供，但我分不清），但是我发现发布的博文是根据发布日期倒序排序的，即：越早发布的，排的越靠后！而发布日期，我们可以通过博文的头部<code>date</code>字段指定：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: blog title</div><div class="line">date: 2016-07-20 10:59:31  // 指定发布日期</div><div class="line">tag: hexo   </div><div class="line">category: hexo   </div><div class="line">---</div></pre></td></tr></table></figure>
-<p>所以我们可以给想要置顶的博文，指定一个将来的日期，这样就可以让这篇博文一直排在别的博文前面，达到手工指定的目的！</p>
+<p>所以我们可以给想要置顶的博文，指定一个将来的日期，这样就可以让这篇博文一直排在别的博文前面，达到手工置顶的目的！但是要注意：对于已经发布的博文，发布日期和文件名称（不是title字段的值，而是md文件名）是该文章访问url的组成部分，也就意味着，已经发布的文章如果改了发布日期，针对这篇文章的链接就都不能用了，而且浏览统计等信息都会受到影响，所以手工置顶应该慎重使用！</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo博客至此搭建完毕，并且应用了简约美丽的NexT.Mist主题，但是仍有一些不足之处，例如没有博文置顶功能；该主题的主页过于简单，没有边栏，导致主页展示的有效信息减少，不利于访客浏览，也不利于推广自己的其它渠道，这可能就是简约付出的代价，主题作者以后可能也会改进吧！如果不喜欢这个主题，可以参看一下<a href="http://www.kymjs.com/" target="_blank" rel="external">开源实验室</a>或者<a href="http://stormzhang.com/" target="_blank" rel="external">stormzhang</a>的个人博客主题，我感觉这两个都不错。但是最重要的还是博客要有内容，没有内容，再好的个人站点也没有意义！所以样式先这样吧，这段时间先写技术文章，如果以后自己开始认真经营博客了，再绑定域名和优化样式。最后，如果大家有什么问题，欢迎留言讨论！</p>
 <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p><a href="https://github.com/madongqiang2201" target="_blank" rel="external">我的Github</a></p>
 <p><a href="https://madongqiang2201.github.io/">我的个人博客</a></p>
