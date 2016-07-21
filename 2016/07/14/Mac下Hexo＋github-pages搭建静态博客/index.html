@@ -96,7 +96,7 @@
 <meta property="og:image" content="http://oam0f3ifh.bkt.clouddn.com/new_repo.png-bs">
 <meta property="og:image" content="http://oam0f3ifh.bkt.clouddn.com/ssh_key.png-bs">
 <meta property="og:image" content="http://oam0f3ifh.bkt.clouddn.com/clone_address.png-bs">
-<meta property="og:updated_time" content="2016-07-20T11:17:17.000Z">
+<meta property="og:updated_time" content="2016-07-21T03:20:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac搭建Hexo博客及NexT主题配置优化">
 <meta name="twitter:description" content="前言最近看到阳春面的博客，感觉非常漂亮，正好最近也想自己搭个博客，记录一下自己的学习经历和生活感悟，给自己留下点回忆，同时整理一下自己的思路，于是就想仿照着弄一个类似的静态博客网站，正好最近有时间，而且内心搭博客的念头越来越汹涌，所以，说干就干！
@@ -427,7 +427,8 @@
 <p>保存配置之后，在本地博客目录执行以下命令：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean  // clean本地项目，防止缓存</div><div class="line">hexo g      // 根据你编辑的md格式的博客，生成静态网页</div><div class="line">hexo d      // 将本地博客发布到github</div></pre></td></tr></table></figure>
 <p>然后，在浏览器地址栏输入<code>yourusername.github.io</code>就可以访问你的博客了，别人也可以通过这个地址访问你的博客。</p>
-<p>如果想了解Hexo常用命令可以点击<a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">这里</a>，Hexo常用命令没几个，常用的有创建新博客、clean、生成静态文件、发布等，上述官方文档有详细介绍</p>
+<p>如果想了解Hexo常用命令可以点击<a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="external">这里</a>，Hexo常用命令没几个，常用的有创建新博客、clean、生成静态文件、发布等，上述官方文档有详细介绍，这里记录几个我经常用到的：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo init       //在指定目录执行该命令，会将当前目录初始化为hexo站点，生成hexo站点所需的一切文件</div><div class="line">hexo new “my new blog title”   //新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</div><div class="line">hexo clean      // 清除缓存，如果对本地文件做了修改，同步到远程验证修改的效果之前，先clean，清除缓存</div><div class="line">hexo generate   // 可以简写成hexo g 根据markdown文件生成静态文件</div><div class="line">hexo server     // 或者简写成hexo s 启动本地hexo 服务器，默认localhost:4000可以访问</div><div class="line">hexo deploy     // 或者简写成hexo d 将本地修改，部署到远端</div><div class="line">hexo version    // 显示hexo版本</div></pre></td></tr></table></figure>
 <h2 id="NexT主题配置及优化"><a href="#NexT主题配置及优化" class="headerlink" title="NexT主题配置及优化"></a>NexT主题配置及优化</h2><p>NexT主题是一套简约的主题，设置完成之后，就像<a href="https://madongqiang2201.github.io/">我的博客</a>现在的样子，NexT主题的详细配置请看<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">这里</a>，这个是NexT主题作者维护的配置文档，作者是国人，所以文档是中文的，而且写的非常详细，对照文档，所有功能都能轻松实现。等你配置完成后，你的博客将拥有评论系统，访问次数统计，站内搜索，代码高亮，百度统计，社交分享（分享到微博，微信，qq等）等等强大的功能。官方文档很详细，我就不再赘述了。</p>
 <h2 id="其他遗漏的点"><a href="#其他遗漏的点" class="headerlink" title="其他遗漏的点"></a>其他遗漏的点</h2><p><strong>1.如何删除一篇博文</strong></p>
 <p>当然，我们辛辛苦苦写了博文，一般是不会删除的，最多修改一下，但是我们搭建的过程中或者刚搭建好个人博客站点，可能一激动就发了好多测试博文，如果想删除这类文章，在Finder中，找到本地博客所在目录，找到<code>/source/_posts</code>文件夹，里面放了所有我们写的博客，想删除哪篇，直接在这里删除，然后再重新发布到github，这篇博文就不见了</p>
