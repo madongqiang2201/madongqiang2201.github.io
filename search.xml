@@ -4,6 +4,102 @@
   
     
     <entry>
+      <title><![CDATA[玩转Android UI三步曲]]></title>
+      <url>https://madongqiang2201.github.io/2017/03/03/%E7%8E%A9%E8%BD%ACAndroid-UI%E4%B8%89%E6%AD%A5%E6%9B%B2/</url>
+      <content type="html"><![CDATA[<h2 id="玩转Android-UI三部曲"><a href="#玩转Android-UI三部曲" class="headerlink" title="玩转Android UI三部曲"></a>玩转Android UI三部曲</h2><p>本文是对将来一段时间要整理的android知识的索引，算是给自己挖个坑。</p>
+<p>这系列文章的主题是玩转Android UI，跟UI直接相关的有三个主题分别是Drawable，动画和自定义控件。系统自带控件的使用方式不在本系列文章的讨论范围之内。所以被系列文章分为三个部分介绍：</p>
+<ol>
+<li>Android Drawable体系详解</li>
+<li>Android 动画体系详解</li>
+<li>Android自定义控件详解</li>
+</ol>
+<h3 id="Android-Drawable体系详解"><a href="#Android-Drawable体系详解" class="headerlink" title="Android Drawable体系详解"></a>Android Drawable体系详解</h3><p>这部分内容主要包括对Android原有的各种Drawable资源的详细探讨，以及对Android5.X中新增的Drawable资源的详细探讨。</p>
+<h4 id="一、传统Drawable"><a href="#一、传统Drawable" class="headerlink" title="一、传统Drawable"></a>一、传统Drawable</h4><ol>
+<li>ColorDrawable</li>
+<li>BitmapDrawable</li>
+<li>NinePatchDrawable</li>
+<li>ScaleDrawable</li>
+<li>RotateDrawable</li>
+<li>GradientDrawable－－xml中&lt;shape&gt;标签对应的drawable</li>
+<li>StateListDrawable</li>
+<li>InsetDrawable</li>
+<li>ClipDrawable</li>
+<li>LayerDrawable</li>
+<li>LevelListDrawable</li>
+<li>TransitionDrawable</li>
+<li>AnimationDrawable</li>
+<li>自定义drawable</li>
+</ol>
+<h4 id="二、android-5-X新增Drawable"><a href="#二、android-5-X新增Drawable" class="headerlink" title="二、android 5.X新增Drawable"></a>二、android 5.X新增Drawable</h4><ol>
+<li>RippleDrawable</li>
+<li>AnimatedStateListDrawable 对应XML中&lt;animated-selector&gt;标签</li>
+<li>AnimatedVectorDrawable／VectorDrawable</li>
+</ol>
+<h3 id="Android动画体系详解"><a href="#Android动画体系详解" class="headerlink" title="Android动画体系详解"></a>Android动画体系详解</h3><p>这部分包括的内容比较多，主要分为一下几个方面：</p>
+<ol>
+<li>传统View动画解析</li>
+<li>Property属性动画解析</li>
+<li>插值器Interpolator以及估计器TypeEvaluator解析</li>
+<li>LayoutAnimation动画解析</li>
+<li>Android 5.X新增动画解析</li>
+</ol>
+<p>下面看一下每一个小部分包涵的详细内容：</p>
+<h4 id="一、View-Animation"><a href="#一、View-Animation" class="headerlink" title="一、View Animation"></a>一、View Animation</h4><p>View Animation包括Tween(补间)动画和Frame(帧)动画</p>
+<h5 id="1、Tween-Animation："><a href="#1、Tween-Animation：" class="headerlink" title="1、Tween Animation："></a>1、Tween Animation：</h5><p>Tween动画有以下几个子类，我们都会详细介绍</p>
+<ul>
+<li>AlphaAnimation</li>
+<li>TranslateAnimation</li>
+<li>RotateAnimation</li>
+<li>ScaleTranslation</li>
+<li>AnimationSet</li>
+</ul>
+<h5 id="2、Frame-Animation"><a href="#2、Frame-Animation" class="headerlink" title="2、Frame Animation"></a>2、Frame Animation</h5><p>Frame动画实质是一种Drawable，并没有对View做任何操作，而是操作的Drawable</p>
+<h5 id="3、自定义动画"><a href="#3、自定义动画" class="headerlink" title="3、自定义动画"></a>3、自定义动画</h5><p>这部分内容我们将介绍如何自定义Android View动画</p>
+<h4 id="二、插值器Interpolator和估值器TypeEvaluator"><a href="#二、插值器Interpolator和估值器TypeEvaluator" class="headerlink" title="二、插值器Interpolator和估值器TypeEvaluator"></a>二、插值器Interpolator和估值器TypeEvaluator</h4><p>这部分内容我们将讨论：</p>
+<ol>
+<li>系统插值器和估值器的解释与使用</li>
+<li>如何自定义插值器和估值器</li>
+</ol>
+<h4 id="三、属性动画"><a href="#三、属性动画" class="headerlink" title="三、属性动画"></a>三、属性动画</h4><p>这部分内容主要包括：</p>
+<ol>
+<li>ObjectAnimator解析</li>
+<li>ValueAnimator解析</li>
+<li>AnimatorSet解析</li>
+<li>PropertiesValuesHolder与Keyframe解析</li>
+<li>ViewPropertyAnimator概述</li>
+</ol>
+<h4 id="四、LayoutAnimation动画"><a href="#四、LayoutAnimation动画" class="headerlink" title="四、LayoutAnimation动画"></a>四、LayoutAnimation动画</h4><p>这部分内容解析针对布局的动画，这个动画作用在ViewGroup及其子类身上，动画效果会在你往ViewGroup中添加／删除子元素的时候显示在子元素身上。一共有三种方式应用LayoutAnimation：</p>
+<ol>
+<li>android:animateLayoutChanges=“true”使用默认Layout动画</li>
+<li>LayoutAnimationController／android:layoutAnimation使用自定义Layout Animation（View动画）</li>
+<li>LayoutTransition使用自定义ViewGroup Animator（属性动画）</li>
+</ol>
+<h4 id="四、Activity转场动画"><a href="#四、Activity转场动画" class="headerlink" title="四、Activity转场动画"></a>四、Activity转场动画</h4><ol>
+<li>传统转场动画详解</li>
+<li><p>Android 5.X Material转场动画：</p>
+<ul>
+<li>使用系统动画：Fade，Slide，Explode，有共享元素时可以指定共享元素过渡动画changeBound，changeClipBounds，changeImageTransform，ChangeTransform，ChangeScroll等</li>
+<li>自定义Transition</li>
+</ul>
+</li>
+</ol>
+<h4 id="五、android-5-X动画"><a href="#五、android-5-X动画" class="headerlink" title="五、android 5.X动画"></a>五、android 5.X动画</h4><p>这部分介绍Android 5.X引入的动画效果：</p>
+<ol>
+<li>Reveal Effect，揭露效果</li>
+<li>曲线动画Path／PathInterpolator</li>
+<li>StateListAnimator</li>
+</ol>
+<h3 id="Android-自定义控件详解"><a href="#Android-自定义控件详解" class="headerlink" title="Android 自定义控件详解"></a>Android 自定义控件详解</h3><p>本部分内容待定</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android Hanlder/Loop/MessageQueue工作原理解析]]></title>
+      <url>https://madongqiang2201.github.io/2016/12/04/Android-Hanlder-Loop-MessageQueue%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Mac搭建Hexo博客及NexT主题配置优化]]></title>
       <url>https://madongqiang2201.github.io/2016/07/21/Mac%E4%B8%8BHexo%EF%BC%8Bgithub-pages%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近看到<a href="https://www.aswifter.com/" target="_blank" rel="external">阳春面</a>的博客，感觉非常漂亮，正好最近也想自己搭个博客，记录一下自己的学习经历和生活感悟，给自己留下点回忆，同时整理一下自己的思路，于是就想仿照着弄一个类似的静态博客网站，正好最近有时间，而且内心搭博客的念头越来越汹涌，所以，说干就干！</p>
@@ -89,7 +185,7 @@
 <p><strong>4.手动实现某条博文置顶</strong><br>Next主题没有博文置顶相关设置（或许这个功能Hexo应该提供，但我分不清），但是我发现发布的博文是根据发布日期倒序排序的，即：越早发布的，排的越靠后！而发布日期，我们可以通过博文的头部<code>date</code>字段指定：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: blog title</div><div class="line">date: 2016-07-20 10:59:31  // 指定发布日期</div><div class="line">tag: hexo   </div><div class="line">category: hexo   </div><div class="line">---</div></pre></td></tr></table></figure>
 <p>所以我们可以给想要置顶的博文，指定一个将来的日期，这样就可以让这篇博文一直排在别的博文前面，达到手工置顶的目的！但是要注意：对于已经发布的博文，发布日期和文件名称（不是title字段的值，而是md文件名）是该文章访问url的组成部分，也就意味着，已经发布的文章如果改了发布日期，针对这篇文章的链接就都不能用了，而且浏览统计等信息都会受到影响，所以手工置顶应该慎重使用！</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo博客至此搭建完毕，并且应用了简约美丽的NexT.Mist主题，但是仍有一些不足之处，例如没有博文置顶功能；该主题的主页过于简单，没有边栏，导致主页展示的有效信息减少，不利于访客浏览，也不利于推广自己的其它渠道，这可能就是简约付出的代价，主题作者以后可能也会改进吧！如果不喜欢这个主题，可以参看一下<a href="http://www.kymjs.com/" target="_blank" rel="external">开源实验室</a>或者<a href="http://stormzhang.com/" target="_blank" rel="external">stormzhang</a>的个人博客主题，我感觉这两个都不错。但是最重要的还是博客要有内容，没有内容，再好的个人站点也没有意义！所以样式先这样吧，这段时间先写技术文章，如果以后自己开始认真经营博客了，再绑定域名和优化样式。最后，如果大家有什么问题，欢迎留言讨论！</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo博客至此搭建完毕，并且应用了简约美丽的NexT.Mist主题，但是仍有一些不足之处，例如没有通过正常渠道博文置顶功能；该主题的主页过于简单，没有边栏，导致主页展示的有效信息减少，不利于访客浏览，也不利于推广自己的其它渠道，这可能就是简约付出的代价，主题作者以后可能也会改进吧！如果不喜欢这个主题，可以参看一下<a href="http://www.kymjs.com/" target="_blank" rel="external">开源实验室</a>或者<a href="http://stormzhang.com/" target="_blank" rel="external">stormzhang</a>的个人博客主题，我感觉这两个都不错。但是最重要的还是博客要有内容，没有内容，再好的个人站点也没有意义！所以样式先这样吧，这段时间先写技术文章，如果以后自己开始认真经营博客了，再绑定域名和优化样式。最后，如果大家有什么问题，欢迎留言讨论！</p>
 <h2 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h2><p><a href="https://github.com/madongqiang2201" target="_blank" rel="external">我的Github</a></p>
 <p><a href="https://madongqiang2201.github.io/">我的个人博客</a></p>
 <p><a href="http://www.jianshu.com/users/a5a6afe1c044/timeline" target="_blank" rel="external">我的简书</a></p>
