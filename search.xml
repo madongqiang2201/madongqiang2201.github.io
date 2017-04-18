@@ -4,9 +4,15 @@
   
     
     <entry>
+      <title><![CDATA[暴露在统计学背后的真相]]></title>
+      <url>https://madongqiang2201.github.io/2017/04/18/%E6%9A%B4%E9%9C%B2%E5%9C%A8%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%83%8C%E5%90%8E%E7%9A%84%E7%9C%9F%E7%9B%B8/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[玩转Android UI三步曲]]></title>
       <url>https://madongqiang2201.github.io/2017/03/03/%E7%8E%A9%E8%BD%ACAndroid-UI%E4%B8%89%E6%AD%A5%E6%9B%B2/</url>
-      <content type="html"><![CDATA[<h2 id="玩转Android-UI三部曲"><a href="#玩转Android-UI三部曲" class="headerlink" title="玩转Android UI三部曲"></a>玩转Android UI三部曲</h2><p>本文是对将来一段时间要整理的android知识的索引，算是给自己挖个坑。</p>
+      <content type="html"><![CDATA[<p>本文是对将来一段时间要整理的android知识的索引，算是给自己挖个坑。</p>
 <p>这系列文章的主题是玩转Android UI，跟UI直接相关的有三个主题分别是Drawable，动画和自定义控件。系统自带控件的使用方式不在本系列文章的讨论范围之内。所以被系列文章分为三个部分介绍：</p>
 <ol>
 <li>Android Drawable体系详解</li>
@@ -90,6 +96,35 @@
 <li>StateListAnimator</li>
 </ol>
 <h3 id="Android-自定义控件详解"><a href="#Android-自定义控件详解" class="headerlink" title="Android 自定义控件详解"></a>Android 自定义控件详解</h3><p>本部分内容待定</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android Studio Lint工具使用详解]]></title>
+      <url>https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/</url>
+      <content type="html"><![CDATA[<ol>
+<li>代码检查设置：<a href="http://www.jianshu.com/p/ba1ce1c1ae39" target="_blank" rel="external">点击</a></li>
+<li>自动检查清楚冗余资源：<a href="http://blog.csdn.net/qq_19986309/article/details/50266899" target="_blank" rel="external">点击</a></li>
+<li><a href="http://www.carrotsight.com/2016/01/29/%E6%B5%85%E8%B0%88Android%E8%87%AA%E5%AE%9A%E4%B9%89Lint%E8%A7%84%E5%88%99%E7%9A%84%E5%AE%9E%E7%8E%B0%20%EF%BC%88%E4%B8%80%EF%BC%89.html" target="_blank" rel="external">浅谈Android自定义Lint规则的实现 （一） </a></li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android Studio Git 使用详解]]></title>
+      <url>https://madongqiang2201.github.io/2016/12/06/Android-Studio-Git-%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/</url>
+      <content type="html"><![CDATA[<p>重点介绍：</p>
+<ol>
+<li>使用git管理项目基本流程（clone项目，commit，push／pull，merge操作以及打tag／分支，以及合并分支等）</li>
+<li>.gitignore 使用以及清除对已追踪文件或文件夹的追踪（例如清除对build文件的追踪等），介绍.ignore插件，智能生成／编辑各种ignore文件。参考<a href="https://zhengqiangblog.com/blog/article/2" target="_blank" rel="external">这里</a>和<a href="https://segmentfault.com/q/1010000000430426" target="_blank" rel="external">这里</a></li>
+<li>Android studio提交远程分支（本地创建分支之后，提交到远程）：<a href="http://blog.csdn.net/hyr83960944/article/details/38145845" target="_blank" rel="external">这里</a></li>
+<li>获取远程分支：<a href="https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF" target="_blank" rel="external">这里</a></li>
+<li>删除远程分支：<a href="https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF" target="_blank" rel="external">这里</a></li>
+<li>在本地目录下关联远程repository ：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Git remote add origin git@github.com:git_username/repository_name.git</div></pre></td></tr></table></figure>
+<p>取消本地目录下关联的远程库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote remove origin</div></pre></td></tr></table></figure>
 ]]></content>
     </entry>
     
