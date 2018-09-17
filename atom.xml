@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://madongqiang2201.github.io/"/>
-  <updated>2018-09-17T02:37:24.821Z</updated>
+  <updated>2018-09-17T03:06:05.755Z</updated>
   <id>https://madongqiang2201.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Retrofit2 完全解析(一)</title>
-    <link href="https://madongqiang2201.github.io/2018/09/17/Retrofit2-%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E4%B8%80/"/>
-    <id>https://madongqiang2201.github.io/2018/09/17/Retrofit2-完全解析-一/</id>
-    <published>2018-09-17T02:35:33.000Z</published>
-    <updated>2018-09-17T02:37:24.821Z</updated>
+    <title>OkHttp3 完全解析(一)</title>
+    <link href="https://madongqiang2201.github.io/2018/09/17/OkHttp3-%E5%AE%8C%E5%85%A8%E8%A7%A3%E6%9E%90-%E4%B8%80/"/>
+    <id>https://madongqiang2201.github.io/2018/09/17/OkHttp3-完全解析-一/</id>
+    <published>2018-09-17T03:05:05.000Z</published>
+    <updated>2018-09-17T03:06:05.755Z</updated>
     
-    <content type="html"><![CDATA[<p>这篇文章是 Retrofit 系列文章第一篇</p>]]></content>
+    <content type="html"><![CDATA[<p>本篇文章是 RxJava2+Retrofit2+OkHttp3 网络框架完全解析的第一篇</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这篇文章是 Retrofit 系列文章第一篇&lt;/p&gt;
+        &lt;p&gt;本篇文章是 RxJava2+Retrofit2+OkHttp3 网络框架完全解析的第一篇&lt;/p&gt;
 
       
     
@@ -39,117 +39,6 @@
     
     
       <category term="网络框架" scheme="https://madongqiang2201.github.io/tags/%E7%BD%91%E7%BB%9C%E6%A1%86%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暴露在统计学背后的真相</title>
-    <link href="https://madongqiang2201.github.io/2017/04/18/%E6%9A%B4%E9%9C%B2%E5%9C%A8%E7%BB%9F%E8%AE%A1%E5%AD%A6%E8%83%8C%E5%90%8E%E7%9A%84%E7%9C%9F%E7%9B%B8/"/>
-    <id>https://madongqiang2201.github.io/2017/04/18/暴露在统计学背后的真相/</id>
-    <published>2017-04-18T13:30:04.000Z</published>
-    <updated>2017-04-18T14:27:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>1、动机的重要性<br>以色列幼儿园案例：<br>如果家长接孩子，迟到一天罚三美元，迟到人数会上涨</p><p>如果献血者收获的不仅仅是对其无私行为的赞扬，还可以拿到一小笔补贴，献血量会下降。原因在于，这笔补贴将一件高尚的善举变成了一种为挣几美元而吃苦受罪的行为，而且这点蝇头小利完全不值得。<br>假如献血者可以得到很多钱，那献血者会因此趋之若鹜。但与此同时，其它方面也会发生显著变化。因为所有动机都有其弊端。如果一品脱血液一夜之间上涨到5000美元，无疑会有许多人心生歹意，他们可能会动手持刀抢血，可能会用猪血鱼目混珠，可能会用假身份证来钻献血次数限制的空子。无论是何动机，无论情势如何，狡猾之徒总会不择手段的谋取私利。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;1、动机的重要性&lt;br&gt;以色列幼儿园案例：&lt;br&gt;如果家长接孩子，迟到一天罚三美元，迟到人数会上涨&lt;/p&gt;
-&lt;p&gt;如果献血者收获的不仅仅是对其无私行为的赞扬，还可以拿到一小笔补贴，献血量会下降。原因在于，这笔补贴将一件高尚的善举变成了一种为挣几美元而吃苦受罪的行为，而且这点
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>玩转Android UI三步曲</title>
-    <link href="https://madongqiang2201.github.io/2017/03/03/%E7%8E%A9%E8%BD%ACAndroid-UI%E4%B8%89%E6%AD%A5%E6%9B%B2/"/>
-    <id>https://madongqiang2201.github.io/2017/03/03/玩转Android-UI三步曲/</id>
-    <published>2017-03-03T03:18:23.000Z</published>
-    <updated>2016-12-05T12:51:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文是对将来一段时间要整理的android知识的索引，算是给自己挖个坑。</p><p>这系列文章的主题是玩转Android UI，跟UI直接相关的有三个主题分别是Drawable，动画和自定义控件。系统自带控件的使用方式不在本系列文章的讨论范围之内。所以被系列文章分为三个部分介绍：</p><ol><li>Android Drawable体系详解</li><li>Android 动画体系详解</li><li>Android自定义控件详解</li></ol><h3 id="Android-Drawable体系详解"><a href="#Android-Drawable体系详解" class="headerlink" title="Android Drawable体系详解"></a>Android Drawable体系详解</h3><p>这部分内容主要包括对Android原有的各种Drawable资源的详细探讨，以及对Android5.X中新增的Drawable资源的详细探讨。</p><h4 id="一、传统Drawable"><a href="#一、传统Drawable" class="headerlink" title="一、传统Drawable"></a>一、传统Drawable</h4><ol><li>ColorDrawable</li><li>BitmapDrawable</li><li>NinePatchDrawable</li><li>ScaleDrawable</li><li>RotateDrawable</li><li>GradientDrawable－－xml中&lt;shape&gt;标签对应的drawable</li><li>StateListDrawable</li><li>InsetDrawable</li><li>ClipDrawable</li><li>LayerDrawable</li><li>LevelListDrawable</li><li>TransitionDrawable</li><li>AnimationDrawable</li><li>自定义drawable</li></ol><h4 id="二、android-5-X新增Drawable"><a href="#二、android-5-X新增Drawable" class="headerlink" title="二、android 5.X新增Drawable"></a>二、android 5.X新增Drawable</h4><ol><li>RippleDrawable</li><li>AnimatedStateListDrawable 对应XML中&lt;animated-selector&gt;标签</li><li>AnimatedVectorDrawable／VectorDrawable</li></ol><h3 id="Android动画体系详解"><a href="#Android动画体系详解" class="headerlink" title="Android动画体系详解"></a>Android动画体系详解</h3><p>这部分包括的内容比较多，主要分为一下几个方面：</p><ol><li>传统View动画解析</li><li>Property属性动画解析</li><li>插值器Interpolator以及估计器TypeEvaluator解析</li><li>LayoutAnimation动画解析</li><li>Android 5.X新增动画解析</li></ol><p>下面看一下每一个小部分包涵的详细内容：</p><h4 id="一、View-Animation"><a href="#一、View-Animation" class="headerlink" title="一、View Animation"></a>一、View Animation</h4><p>View Animation包括Tween(补间)动画和Frame(帧)动画</p><h5 id="1、Tween-Animation："><a href="#1、Tween-Animation：" class="headerlink" title="1、Tween Animation："></a>1、Tween Animation：</h5><p>Tween动画有以下几个子类，我们都会详细介绍</p><ul><li>AlphaAnimation</li><li>TranslateAnimation</li><li>RotateAnimation</li><li>ScaleTranslation</li><li>AnimationSet</li></ul><h5 id="2、Frame-Animation"><a href="#2、Frame-Animation" class="headerlink" title="2、Frame Animation"></a>2、Frame Animation</h5><p>Frame动画实质是一种Drawable，并没有对View做任何操作，而是操作的Drawable</p><h5 id="3、自定义动画"><a href="#3、自定义动画" class="headerlink" title="3、自定义动画"></a>3、自定义动画</h5><p>这部分内容我们将介绍如何自定义Android View动画</p><h4 id="二、插值器Interpolator和估值器TypeEvaluator"><a href="#二、插值器Interpolator和估值器TypeEvaluator" class="headerlink" title="二、插值器Interpolator和估值器TypeEvaluator"></a>二、插值器Interpolator和估值器TypeEvaluator</h4><p>这部分内容我们将讨论：</p><ol><li>系统插值器和估值器的解释与使用</li><li>如何自定义插值器和估值器</li></ol><h4 id="三、属性动画"><a href="#三、属性动画" class="headerlink" title="三、属性动画"></a>三、属性动画</h4><p>这部分内容主要包括：</p><ol><li>ObjectAnimator解析</li><li>ValueAnimator解析</li><li>AnimatorSet解析</li><li>PropertiesValuesHolder与Keyframe解析</li><li>ViewPropertyAnimator概述</li></ol><h4 id="四、LayoutAnimation动画"><a href="#四、LayoutAnimation动画" class="headerlink" title="四、LayoutAnimation动画"></a>四、LayoutAnimation动画</h4><p>这部分内容解析针对布局的动画，这个动画作用在ViewGroup及其子类身上，动画效果会在你往ViewGroup中添加／删除子元素的时候显示在子元素身上。一共有三种方式应用LayoutAnimation：</p><ol><li>android:animateLayoutChanges=“true”使用默认Layout动画</li><li>LayoutAnimationController／android:layoutAnimation使用自定义Layout Animation（View动画）</li><li>LayoutTransition使用自定义ViewGroup Animator（属性动画）</li></ol><h4 id="四、Activity转场动画"><a href="#四、Activity转场动画" class="headerlink" title="四、Activity转场动画"></a>四、Activity转场动画</h4><ol><li>传统转场动画详解</li><li><p>Android 5.X Material转场动画：</p><ul><li>使用系统动画：Fade，Slide，Explode，有共享元素时可以指定共享元素过渡动画changeBound，changeClipBounds，changeImageTransform，ChangeTransform，ChangeScroll等</li><li>自定义Transition</li></ul></li></ol><h4 id="五、android-5-X动画"><a href="#五、android-5-X动画" class="headerlink" title="五、android 5.X动画"></a>五、android 5.X动画</h4><p>这部分介绍Android 5.X引入的动画效果：</p><ol><li>Reveal Effect，揭露效果</li><li>曲线动画Path／PathInterpolator</li><li>StateListAnimator</li></ol><h3 id="Android-自定义控件详解"><a href="#Android-自定义控件详解" class="headerlink" title="Android 自定义控件详解"></a>Android 自定义控件详解</h3><p>本部分内容待定</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;本文是对将来一段时间要整理的android知识的索引，算是给自己挖个坑。&lt;/p&gt;
-&lt;p&gt;这系列文章的主题是玩转Android UI，跟UI直接相关的有三个主题分别是Drawable，动画和自定义控件。系统自带控件的使用方式不在本系列文章的讨论范围之内。所以被系列文章分为三个
-      
-    
-    </summary>
-    
-    
-      <category term="索引" scheme="https://madongqiang2201.github.io/tags/%E7%B4%A2%E5%BC%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Studio Lint工具使用详解</title>
-    <link href="https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint工具使用详解/</id>
-    <published>2016-12-06T06:20:52.000Z</published>
-    <updated>2016-12-06T06:27:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>代码检查设置：<a href="http://www.jianshu.com/p/ba1ce1c1ae39" target="_blank" rel="noopener">点击</a></li><li>自动检查清楚冗余资源：<a href="http://blog.csdn.net/qq_19986309/article/details/50266899" target="_blank" rel="noopener">点击</a></li><li><a href="http://www.carrotsight.com/2016/01/29/%E6%B5%85%E8%B0%88Android%E8%87%AA%E5%AE%9A%E4%B9%89Lint%E8%A7%84%E5%88%99%E7%9A%84%E5%AE%9E%E7%8E%B0%20%EF%BC%88%E4%B8%80%EF%BC%89.html" target="_blank" rel="noopener">浅谈Android自定义Lint规则的实现 （一） </a></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;代码检查设置：&lt;a href=&quot;http://www.jianshu.com/p/ba1ce1c1ae39&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;点击&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;自动检查清楚冗余资源：&lt;a href=&quot;http://bl
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Android Studio Git 使用详解</title>
-    <link href="https://madongqiang2201.github.io/2016/12/06/Android-Studio-Git-%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://madongqiang2201.github.io/2016/12/06/Android-Studio-Git-使用详解/</id>
-    <published>2016-12-06T06:20:27.000Z</published>
-    <updated>2016-12-08T02:59:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>重点介绍：</p><ol><li>使用git管理项目基本流程（clone项目，commit，push／pull，merge操作以及打tag／分支，以及合并分支等）</li><li>.gitignore 使用以及清除对已追踪文件或文件夹的追踪（例如清除对build文件的追踪等），介绍.ignore插件，智能生成／编辑各种ignore文件。参考<a href="https://zhengqiangblog.com/blog/article/2" target="_blank" rel="noopener">这里</a>和<a href="https://segmentfault.com/q/1010000000430426" target="_blank" rel="noopener">这里</a></li><li>Android studio提交远程分支（本地创建分支之后，提交到远程）：<a href="http://blog.csdn.net/hyr83960944/article/details/38145845" target="_blank" rel="noopener">这里</a></li><li>获取远程分支：<a href="https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF" target="_blank" rel="noopener">这里</a></li><li>删除远程分支：<a href="https://git-scm.com/book/zh/v1/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF" target="_blank" rel="noopener">这里</a></li><li>在本地目录下关联远程repository ：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Git remote add origin git@github.com:git_username/repository_name.git</span><br></pre></td></tr></table></figure><p>取消本地目录下关联的远程库：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;重点介绍：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;使用git管理项目基本流程（clone项目，commit，push／pull，merge操作以及打tag／分支，以及合并分支等）&lt;/li&gt;
-&lt;li&gt;.gitignore 使用以及清除对已追踪文件或文件夹的追踪（例如清除对build文件的
-      
-    
-    </summary>
-    
-    
-      <category term="git" scheme="https://madongqiang2201.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Hanlder/Loop/MessageQueue工作原理解析</title>
-    <link href="https://madongqiang2201.github.io/2016/12/04/Android-Hanlder-Loop-MessageQueue%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/"/>
-    <id>https://madongqiang2201.github.io/2016/12/04/Android-Hanlder-Loop-MessageQueue工作原理解析/</id>
-    <published>2016-12-04T14:45:28.000Z</published>
-    <updated>2016-12-05T12:52:13.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Handler" scheme="https://madongqiang2201.github.io/tags/Handler/"/>
     
   </entry>
   
