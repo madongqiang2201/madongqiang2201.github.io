@@ -69,7 +69,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="网络框架," />
 
 
 
@@ -87,22 +87,16 @@
 
 
 
-<meta name="description" content="代码检查设置：点击
-自动检查清楚冗余资源：点击
-浅谈Android自定义Lint规则的实现 （一）">
+<meta name="description" content="这篇文章是 Retrofit 系列文章第一篇">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Studio Lint工具使用详解">
-<meta property="og:url" content="https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint工具使用详解/index.html">
+<meta property="og:title" content="Retrofit2 完全解析(一)">
+<meta property="og:url" content="https://madongqiang2201.github.io/2018/09/17/Retrofit2-完全解析-一/index.html">
 <meta property="og:site_name" content="小马哥Mark的博客">
-<meta property="og:description" content="代码检查设置：点击
-自动检查清楚冗余资源：点击
-浅谈Android自定义Lint规则的实现 （一）">
-<meta property="og:updated_time" content="2016-12-06T06:27:38.000Z">
+<meta property="og:description" content="这篇文章是 Retrofit 系列文章第一篇">
+<meta property="og:updated_time" content="2018-09-17T02:37:24.821Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android Studio Lint工具使用详解">
-<meta name="twitter:description" content="代码检查设置：点击
-自动检查清楚冗余资源：点击
-浅谈Android自定义Lint规则的实现 （一）">
+<meta name="twitter:title" content="Retrofit2 完全解析(一)">
+<meta name="twitter:description" content="这篇文章是 Retrofit 系列文章第一篇">
 
 
 
@@ -123,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint工具使用详解/"/>
+  <link rel="canonical" href="https://madongqiang2201.github.io/2018/09/17/Retrofit2-完全解析-一/"/>
 
-  <title> Android Studio Lint工具使用详解 | 小马哥Mark的博客 </title>
+  <title> Retrofit2 完全解析(一) | 小马哥Mark的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -286,7 +280,7 @@
             
             
               
-                Android Studio Lint工具使用详解
+                Retrofit2 完全解析(一)
               
             
           </h1>
@@ -298,19 +292,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-06T14:20:52+08:00" content="2016-12-06">
-              2016-12-06
+            <time itemprop="dateCreated" datetime="2018-09-17T10:35:33+08:00" content="2018-09-17">
+              2018-09-17
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/网络框架/" itemprop="url" rel="index">
+                    <span itemprop="name">网络框架</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/12/06/Android-Studio-Lint工具使用详解/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/06/Android-Studio-Lint工具使用详解/" itemprop="commentsCount"></span>
+                <a href="/2018/09/17/Retrofit2-完全解析-一/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/09/17/Retrofit2-完全解析-一/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -320,7 +333,7 @@
 
           
           
-             <span id="/2016/12/06/Android-Studio-Lint工具使用详解/" class="leancloud_visitors" data-flag-title="Android Studio Lint工具使用详解">
+             <span id="/2018/09/17/Retrofit2-完全解析-一/" class="leancloud_visitors" data-flag-title="Retrofit2 完全解析(一)">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -342,11 +355,7 @@
       
 
       
-        <ol>
-<li>代码检查设置：<a href="http://www.jianshu.com/p/ba1ce1c1ae39" target="_blank" rel="external">点击</a></li>
-<li>自动检查清楚冗余资源：<a href="http://blog.csdn.net/qq_19986309/article/details/50266899" target="_blank" rel="external">点击</a></li>
-<li><a href="http://www.carrotsight.com/2016/01/29/%E6%B5%85%E8%B0%88Android%E8%87%AA%E5%AE%9A%E4%B9%89Lint%E8%A7%84%E5%88%99%E7%9A%84%E5%AE%9E%E7%8E%B0%20%EF%BC%88%E4%B8%80%EF%BC%89.html" target="_blank" rel="external">浅谈Android自定义Lint规则的实现 （一） </a></li>
-</ol>
+        <p>这篇文章是 Retrofit 系列文章第一篇</p>
 
       
     </div>
@@ -393,22 +402,24 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/网络框架/" rel="tag">#网络框架</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/06/Android-Studio-Git-使用详解/" rel="next" title="Android Studio Git 使用详解">
-                <i class="fa fa-chevron-left"></i> Android Studio Git 使用详解
+              <a href="/2017/04/18/暴露在统计学背后的真相/" rel="next" title="暴露在统计学背后的真相">
+                <i class="fa fa-chevron-left"></i> 暴露在统计学背后的真相
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/03/玩转Android-UI三步曲/" rel="prev" title="玩转Android UI三步曲">
-                玩转Android UI三步曲 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -423,10 +434,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/12/06/Android-Studio-Lint工具使用详解/"
-     data-title="Android Studio Lint工具使用详解"
+        <div class="ds-share flat" data-thread-key="2018/09/17/Retrofit2-完全解析-一/"
+     data-title="Retrofit2 完全解析(一)"
      data-content=""
-     data-url="https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint工具使用详解/">
+     data-url="https://madongqiang2201.github.io/2018/09/17/Retrofit2-完全解析-一/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -456,8 +467,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/06/Android-Studio-Lint工具使用详解/"
-           data-title="Android Studio Lint工具使用详解" data-url="https://madongqiang2201.github.io/2016/12/06/Android-Studio-Lint工具使用详解/">
+      <div class="ds-thread" data-thread-key="2018/09/17/Retrofit2-完全解析-一/"
+           data-title="Retrofit2 完全解析(一)" data-url="https://madongqiang2201.github.io/2018/09/17/Retrofit2-完全解析-一/">
       </div>
     
   </div>
